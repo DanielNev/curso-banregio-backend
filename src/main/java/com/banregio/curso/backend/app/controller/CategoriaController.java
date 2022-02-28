@@ -80,7 +80,7 @@ public class CategoriaController
 	}
 	@ApiOperation( value = "Modificar categoría" , notes = "Modificar recurso de la entidad Categoría" )
 	@PutMapping("/categoria/{id}")
-	public ResponseEntity<Categoria> update(@PathVariable("id") Long id, @RequestBody Categoria categoria ) 
+	public ResponseEntity<Categoria> update(@PathVariable("id") Long id, @RequestBody Categoria categoria ) throws NullPointerException 
 	{
 		Optional<Categoria> categoriaData = categoriaService.getByID(id);
 	    if (categoriaData.isPresent()) 

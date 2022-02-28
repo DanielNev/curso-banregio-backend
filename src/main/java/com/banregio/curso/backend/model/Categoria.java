@@ -2,6 +2,7 @@ package com.banregio.curso.backend.model;
 
 import lombok.Data;
 
+
 @Data
 public class Categoria 
 {

@@ -1,10 +1,9 @@
 package com.banregio.curso.backend.model;
 
-
-
 import com.banregio.curso.backend.entity.Categoria;
 
 import lombok.Data;
+
 
 @Data
 public class Producto 
